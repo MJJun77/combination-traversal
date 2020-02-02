@@ -2,6 +2,7 @@
 C++ code to traverse set's combination one by one.
 
 * How to match all combination
+
 There must be absolutely better refined or superior idea on somewhere, but I just wanted to make it as I wanted - no recursive, and one by one retrieval.
 nCk (k Selection from n) can be represented as n length binary with k number of '1' and n-k number of '0'.
 The only problem is how to retrieve, or how to set the order of these number.
