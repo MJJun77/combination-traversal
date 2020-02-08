@@ -20,4 +20,4 @@ For example, if the number is 111000111000, coresponding terminal node is 3C0.
 Let's climb the binary tree until met the bigger parent : 11100x. 
 After met the first '0' after one or more '1', change this as '1'.  Then rearrange the tail(111000, 6C3) as minimum number after decrementing k(6C2, 000011). 
 So we moved from 111000111000 -> 111001000011. 
-Consequently, these retreival represents ascending order when regarding the selection bit as number.
+Consequently, these retreival is lexicographical order.
