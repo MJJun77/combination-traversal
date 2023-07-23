@@ -9,6 +9,7 @@ class CombinationGen
 	public:
 		CombinationGen(const std::vector<T>* target_set, int k, bool asc_order = false);
 		const std::vector<T>* GetNextCombination();	 // when reaching the end, nullptr is returned.
+		const std::vector<bool>& GetIdxVector();
 	private:
 		//void initIdxInfo();
 		void moveToNextIdx(int target_idx, int sel_cnt, int unsel_cnt);
@@ -39,6 +40,12 @@ const std::vector<T>* CombinationGen<T>::GetNextCombination()
 	}
 	else
 		return nullptr;
+}
+
+template <typename T>
+const std::vector<bool>& CombinationGen<T>::GetIdxVector()
+{
+	return mIdxMgr.getSelectionVec();
 }
 
 #endif
